@@ -84,12 +84,17 @@ def load_data(entity_catalog):
     subprocess.run(["/bin/python3", "/opt/trino/load_data.py", f"'{meta_data_sql}'"])
 
     print("Convert RDS to Dataset...")
-    # Load data from the RDS file
-    result = pd.read_rds(dump_file)
+    import pyreadr
 
-    return result
+    result = pyreadr.read_r(dump_file)
+    # print(result.keys()) # let's check what objects we got
+    df = result[None] 
+    # result = pd.read_rds(dump_file)
+
+    return df
 
 # Example usage:
-entity_catalog = "bi_projeto"
-loaded_data = load_data(entity_catalog)
-print(loaded_data)
+# entity_catalog = "bi_projeto"
+# loaded_data = load_data(entity_catalog)
+# print(loaded_data)
+
