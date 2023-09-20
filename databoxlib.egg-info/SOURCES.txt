@@ -1,7 +1,7 @@
 README.md
 setup.py
 databoxlib/__init__.py
-databoxlib/myfunctions.py
+databoxlib/dbx.py
 databoxlib.egg-info/PKG-INFO
 databoxlib.egg-info/SOURCES.txt
 databoxlib.egg-info/dependency_links.txt
