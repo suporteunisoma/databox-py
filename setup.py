@@ -11,7 +11,7 @@ def read(fname):
 setup(
     name='databoxlib',
     packages=find_packages(include=['databoxlib']),
-    version='0.1.0',
+    version='0.1.1',
     description='Python library to interact with databox',
     author='DataEngineeringUnisoma',
     license='MIT',
