@@ -11,11 +11,11 @@ def read(fname):
 setup(
     name='databoxlib',
     packages=find_packages(include=['databoxlib']),
-    version='0.1.2',
+    version='0.1.3',
     description='Python library to interact with databox',
     author='DataEngineeringUnisoma',
     license='MIT',
-    install_requires=['pyreadr', 'requests'],
+    install_requires=['pyreadr', 'requests','mlflow'],
     setup_requires=[],
     tests_require=[],
     test_suite='tests',

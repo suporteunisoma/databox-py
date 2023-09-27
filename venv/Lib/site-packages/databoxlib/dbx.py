@@ -78,7 +78,7 @@ def load_data(entity_catalog):
 
     # Request data from DataBOX for the Catalog
     print("Collecting data...")
-    os.chdir("~/.local/")
+    os.chdir("~/")
     subprocess.run(["/bin/python3", "/opt/trino/load_data.py", f"'{meta_data_sql}'"])
 
     print("Convert RDS to Dataset...")
