@@ -42,11 +42,11 @@ def finish_mlflow(df_parameter=None, df_metric=None):
 
     if df_parameter is not None:
         for _, row in df_parameter.iterrows():
-            mlflow.log_param(row["params"], row["values"], run_id=run.info.run_uuid)
+            mlflow.log_param(row["params"], row["values"])#, run_id=run.info.run_uuid)
 
     if df_metric is not None:
         for _, row in df_metric.iterrows():
-            mlflow.log_metric(row["params"], row["values"], run_id=run.info.run_uuid)
+            mlflow.log_metric(row["params"], row["values"])#, run_id=run.info.run_uuid)
 
     print(f"run_id: {run.info.run_id}; status: {run.info.status}")
 

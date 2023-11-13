@@ -1,9 +1,18 @@
 Metadata-Version: 2.1
 Name: databoxlib
-Version: 0.1.6
+Version: 0.1.7
 Summary: Python library to interact with databox
 Author: DataEngineeringUnisoma
 License: MIT
 
 # databox-py
 UniSoma DataBOX Python Library
+
+## Para utilizar essa biblioteca dentro de um container do databox, Ã© necessÃ¡rio que o container seja o VSCode 3.0 ou mais recente
+
+
+## Para utilizar esse biblioteca localmente, basta utilizar o seguinte comando:
+
+pip install https://github.com/suporteunisoma/databox-py/tarball/master
+
+### Obs: algumas funÃ§Ãµes sÃ³ funcionam nos contÃªineres do DBX, como a 'load_data', entÃ£o utilize essa biblioteca em sua mÃ¡quina local com precauÃ§Ã£o.
